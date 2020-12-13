@@ -1,46 +1,40 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+<!DOCTYPE html><html lang="en"><head>
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.dom.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="libraries/matter.js"></script>
+    <script src="libraries/p5.play.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyC4BUBzZyI9XgTnaOtXIDLGD7uIUMiElGc",
+        authDomain: "c39-fruitcatcher.firebaseapp.com",
+        databaseURL: "https://c39-fruitcatcher.firebaseio.com",
+        projectId: "c39-fruitcatcher",
+        storageBucket: "c39-fruitcatcher.appspot.com",
+        messagingSenderId: "686122669825",
+        appId: "1:686122669825:web:489d7ecfc2fcb4f9a66d00"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!--Add Your JS files here -->
+    <script src="js/player.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/game.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
-      <title>Virtual Pet-1</title>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
-      <script src="Food.js"></script>
-      <script src="p5.play.js"></script>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  
 
-      
-      <!--Your web app's Firebase configuration
-         Add here
-        Initialize Firebase-->
-
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyDlmsCe067mvJ5uUxCwtdSBlvBInmUOvjw",
-    authDomain: "virtual-pet-1b7b7.firebaseapp.com",
-    databaseURL: "https://virtual-pet-1b7b7.firebaseio.com",
-    projectId: "virtual-pet-1b7b7",
-    storageBucket: "virtual-pet-1b7b7.appspot.com",
-    messagingSenderId: "754612561321",
-    appId: "1:754612561321:web:66c14f8e7957260c5bd0b8"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
-
-
-      <link rel="stylesheet" type="text/css" href="style.css"/>
-    </head>
-    <body>
-      <script src="sketch.js"></script>
-    </body>
-  </html>
+</body></html>
